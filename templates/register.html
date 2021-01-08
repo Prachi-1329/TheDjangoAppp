@@ -1,0 +1,30 @@
+    <Html>  
+    <head>   
+    <title>  
+    Registration Page  
+    </title>  
+    </head>  
+    <body bgcolor="Lightskyblue">  
+    <br>  
+    <br>  
+    <form action="register" method="post"> 
+    {%csrf_token%} 
+      
+    <label> Firstname </label>         
+    <input type="text" name="firstname"/> <br> <br>  
+    <label> Lastname: </label>         
+    <input type="text" name="lastname"/> <br> <br>  
+      
+    <br> <br>  
+    Email:  
+    <input type="email" id="email" name="email"/> <br>    
+    <br> <br>  
+    Password:  
+    <input type="Password" id="passw" name="passw"> <br>   
+    <br> <br>  
+    Re-type password:  
+    <input type="Password" id="repass" name="repass"> <br> <br>  
+    <input type="button" value="Submit"/>  
+    </form>  
+    </body>  
+    </html>  
